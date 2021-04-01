@@ -6,6 +6,9 @@ section.repository-list {
     margin: 1rem 6rem;
     color: #8257e6;
     align-self: flex-start;
+    @media screen and (max-width: 720px) {
+      margin: 1rem;
+    }
   }
   ul {
     width: 90vw;
@@ -38,14 +41,18 @@ section.repository-list {
   }
 }
 header.header {
-  width: 100vw;
+  width: 94vw;
   display: flex;
   justify-content: center;
   h1 {
+    font-size: 2.25rem;
     margin-bottom: 0.25rem;
+    @media screen and (max-width: 400px) {
+      font-size: 1.9rem;
+    }
   }
   div {
-    margin: 2rem 0;
+    margin: 2rem 0 2rem 6vw;
     padding: 1rem 2rem;
     background: #8257e6;
     border-radius: 10px 10px 0 0;
@@ -53,10 +60,18 @@ header.header {
       border: 0;
       padding: 0.5rem 1rem;
     }
+    input[type="text"] {
+      @media screen and (max-width: 400px) {
+        max-width: 150px;
+      }
+    }
     button[type="submit"] {
       border: 0;
       padding: 0.5rem 1rem;
       transition: all 2s;
+      @media screen and (max-width: 400px) {
+        padding: 0.5rem 0.75rem;
+      }
     }
     button[type="submit"]:enabled {
       border-radius: 0 30px 30px 0;
@@ -74,6 +89,10 @@ main {
   text-align: center;
   h2 {
     color: #8257e6;
+    margin-bottom: 0.5rem;
+  }
+  .warning {
+    color: red;
   }
   p {
     color: #444;

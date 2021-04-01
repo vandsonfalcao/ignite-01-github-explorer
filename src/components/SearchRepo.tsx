@@ -19,7 +19,7 @@ export default function SearchRepo() {
       case "wellcome":
         return (
           <main>
-            <div className="mensage">
+            <div>
               <h2>Ah não! Onde estam os respositorios?😭</h2>
               <p>Digite um usuario do github e precione em enviar.</p>
             </div>
@@ -32,8 +32,8 @@ export default function SearchRepo() {
       case "error":
         return (
           <main>
-            <div className="mensage">
-              <h2>404 - Nenhum repositorio encontrado👻</h2>
+            <div>
+              <h2 className="warning">404 - Nenhum repositorio encontrado👻</h2>
               <p>Digite um usuario do github e precione em enviar.</p>
             </div>
           </main>
@@ -41,14 +41,21 @@ export default function SearchRepo() {
     }
   }
   function goSearchRepo() {
-    fetch(`https://api.github.com/users/${inputValue}/repos`)
-      .then((res) => res.json())
-      // res.status === 404 ?
-      .then((data) => setRepositories(data));
-    fetch(`https://api.github.com/users/${inputValue}`)
-      .then((res) => res.json())
-      .then((data) => setUsername(data.name));
-    setContent("repolist");
+    fetch(`https://api.github.com/users/${inputValue}/repos`).then((res) => {
+      res.status === 404
+        ? setContent("error")
+        : res.json().then((data) => {
+            setRepositories(data);
+            setContent("repolist");
+          });
+    });
+    fetch(`https://api.github.com/users/${inputValue}`).then((res) => {
+      res.status === 404
+        ? setContent("error")
+        : res.json().then((data) => {
+            setUsername(data.name);
+          });
+    });
   }
   function handleSubmit(event: FormEvent) {
     event.preventDefault();
