@@ -1,6 +1,6 @@
-# SerarchRepo
+# SearchRepo
 
-> Um vizualizador de repositorios de usuarios do Github
+> Um vizualizador de repositórios de usuarios do Github
 
 ![example](https://user-images.githubusercontent.com/65142350/113363130-7374b200-9326-11eb-8612-1de61e3fa0af.png)
 
@@ -33,8 +33,7 @@ yarn dev
 
 ## Buscar repositórios
 
-Digite o usuario que a aplicação buscará os repositórios para exibição.
-Selecione enviar e pronto!
+Digite o usuario, selecione enviar e pronto, a aplicação buscará os repositórios para exibição!
 
 ![example](https://user-images.githubusercontent.com/65142350/113363216-b040a900-9326-11eb-893f-2361745461e0.png)
 
@@ -51,12 +50,14 @@ Selecione enviar e pronto!
 
 ## Preview
 
-![example](https://user-images.githubusercontent.com/65142350/113363168-90a98080-9326-11eb-8333-943f28d75f6f.png)
-
-> Quando o repositorio não é encontrado.
-
-</br>
 
 ![example](https://user-images.githubusercontent.com/65142350/113363275-d8300c80-9326-11eb-842f-7770e341e43a.png)
 
-> Aplicação resposiva.
+> Aplicação responsiva.
+
+</br>
+
+
+![example](https://user-images.githubusercontent.com/65142350/113363168-90a98080-9326-11eb-8333-943f28d75f6f.png)
+
+> Quando o repositorio não é encontrado.
