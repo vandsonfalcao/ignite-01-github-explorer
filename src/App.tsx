@@ -1,8 +1,6 @@
 import "./styles/global.scss";
-import RepositoryList from "./components/RepositoryList";
+import SearchRepo from "./components/SearchRepo";
 
-export function App(){
-    return (
-        <RepositoryList />
-    )
+export function App() {
+  return <SearchRepo />;
 }

@@ -1,26 +1,23 @@
 import RepositoryItem from "./RepositoryItem";
 import "../styles/repositories.scss";
-import { useEffect, useState } from "react";
-
-//https://api.github.com/users/vandsonfalcao/repos
 
 interface Repository {
   name: string;
   description: string;
   html_url: string;
 }
+interface RepositoryListProps {
+  username: string;
+  repositories: Repository[];
+}
 
-export default function RepositoryList() {
-  const [repositories, setRepositories] = useState<Repository[]>([]);
-  useEffect(() => {
-    fetch("https://api.github.com/users/vandsonfalcao/repos")
-      .then((res) => res.json())
-      .then((data) => setRepositories(data));
-  }, []);
-
+export default function RepositoryList({
+  username,
+  repositories,
+}: RepositoryListProps) {
   return (
     <section className="repository-list">
-      <h1>Lista de Repositórios</h1>
+      <h2>Lista de Repositórios do(a) {username}</h2>
 
       <ul>
         {repositories.map((repository) => {
