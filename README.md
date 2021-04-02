@@ -6,7 +6,7 @@
 
 ## Sumário
 
-- Instalação
+- <a href="#instalation">Instalação</a>
 - Rodando a aplicação
 - Buscar repositórios
 - Meta
@@ -48,7 +48,7 @@ Digite o usuario, selecione enviar e pronto, a aplicação buscará os repositó
 - ReactJS
 - Typescript
 
-## Preview
+## <a class="anchor" id="instalation">Preview</a>
 
 
 ![example](https://user-images.githubusercontent.com/65142350/113363275-d8300c80-9326-11eb-842f-7770e341e43a.png)
