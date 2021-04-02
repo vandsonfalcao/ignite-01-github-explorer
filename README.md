@@ -6,14 +6,14 @@
 
 ## Sumário
 
-- <a href="#instalation">Instalação</a>
-- Rodando a aplicação
-- Buscar repositórios
-- Meta
-- Tecnologias
-- Preview
+- <a href="#install">Instalação</a>
+- <a href="#run">Rodando a aplicação</a>
+- <a href="#play">Buscar repositórios</a>
+- <a href="#meta">Meta</a>
+- <a href="#tech">Tecnologias</a>
+- <a href="#prev">Preview</a>
 
-## Instalação
+## <a class="anchor" id="install">Instalação</a>
 
 ```bash
 npm install
@@ -21,7 +21,7 @@ npm install
 yarn install
 ```
 
-## Rodando a aplicação
+## <a class="anchor" id="run">Rodando a aplicação</a>
 
 Primeiro inicie o servidor de desenvolvimento:
 
@@ -31,24 +31,24 @@ npm run dev
 yarn dev
 ```
 
-## Buscar repositórios
+## <a class="anchor" id="play">Buscar repositórios</a>
 
 Digite o usuario, selecione enviar e pronto, a aplicação buscará os repositórios para exibição!
 
 ![example](https://user-images.githubusercontent.com/65142350/113363216-b040a900-9326-11eb-893f-2361745461e0.png)
 
-## Meta
+## <a class="anchor" id="meta">Meta</a>
 
 [![Linkedin Badge](https://img.shields.io/badge/-vandsonfalcao-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/vandsonfalcao/)](https://www.linkedin.com/in/vandsonfalcao/)
 [![Gmail Badge](https://img.shields.io/badge/-vandsonsf@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:vandsonsf@gmail.com)](mailto:vandsonsf@gmail.com)
 
-## Tecnologias
+## <a class="anchor" id="tech">Tecnologias</a>
 
 - SASS
 - ReactJS
 - Typescript
 
-## <a class="anchor" id="instalation">Preview</a>
+## <a class="anchor" id="prev">Preview</a>
 
 
 ![example](https://user-images.githubusercontent.com/65142350/113363275-d8300c80-9326-11eb-842f-7770e341e43a.png)
